@@ -15,7 +15,6 @@
     </head>
 
     <body class="bg-dark text-light">
-
       <header class="container-fluid">
         <nav class="navbar fixed-top navbar-dark">
           <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
@@ -35,7 +34,7 @@
           </menu>
         </nav>
       </header>
-
+  
       <main class="bg-secondary">
         <div class="players">
           Player:
@@ -49,24 +48,20 @@
             <button id="blue" class="game-button button-bottom-right" onclick="game.pressButton(this)"></button>
             <div class="controls center">
               <div class="game-name">Simon<sup>&reg;</sup></div>
-              <div class="score center">--</div>
-              <button class="btn btn-primary">Reset</button>
+              <div id="score" class="score center">--</div>
+              <button class="btn btn-primary" onclick="game.reset()">Reset</button>
             </div>
           </div>
         </div>
       </main>
-
+  
       <footer class="bg-dark text-dark text-muted">
         <div class="container-fluid">
-          <span class="text-reset">Nathan Roberts</span>
-          <a
-            class="text-reset"
-            href="https://github.com/nkroberts01/simon.git"
-            >Source</a
-          >
+          <span class="text-reset">Author Name(s)</span>
+          <a class="text-reset" href="https://github.com/webprogramming260/simon-javascript">Source</a>
         </div>
       </footer>
-
+  
       <script src="play.js"></script>
     </body>
 
